@@ -6,7 +6,7 @@ import net.thucydides.core.pages.PageObject;
 
 public class ShoppingCartPage extends PageObject {
 
-    @FindBy(xpath = "//button[@id='checkout']")
+    @FindBy(id = "checkout")
     protected WebElementFacade checkOutButton;
 
     @FindBy(id = "first-name")

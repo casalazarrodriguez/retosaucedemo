@@ -16,6 +16,7 @@ public class SelectProductStep extends SelectProductPage {
 
     @Step("seleccionar icono del carrito")
     public void selectShoppingCartIcon() {
-        shoppingCartIcon.click();
+        // Usamos Javascript para asegurar el clic, evitando que el globo rojo bloquee la acción
+        evaluateJavascript("arguments[0].click();", shoppingCartIcon);
     }
 }

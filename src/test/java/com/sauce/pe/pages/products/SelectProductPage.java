@@ -11,7 +11,7 @@ public class SelectProductPage extends PageObject {
     @FindBy(xpath = "//button[@class='btn btn_primary btn_small btn_inventory ']")
     protected List<WebElementFacade> products;
 
-    @FindBy(xpath = "//div[@class='shopping_cart_container']")
+    @FindBy(xpath = "//a[@data-test='shopping-cart-link']")
     protected WebElementFacade shoppingCartIcon;
 
 }
